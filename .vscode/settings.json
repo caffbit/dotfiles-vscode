@@ -1,0 +1,10 @@
+{
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "file": "./commit-instructions.md"
+    },
+    {
+      "text": "Always reply in Traditional Chinese."
+    }
+  ]
+}
