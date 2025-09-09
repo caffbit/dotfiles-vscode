@@ -1,0 +1,55 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon files (must end with two \r)
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# iCloud generated files
+*.icloud
+
+# Backup files
+*~
+*.bak
+*.backup
+*.orig
+*.tmp
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# SSH keys (keep config but ignore keys)
+.ssh/*
+!.ssh/config
+
+# GPG keys
+.gnupg/
+
+# Sensitive dotfiles
+.netrc
+.env
+.env.local
