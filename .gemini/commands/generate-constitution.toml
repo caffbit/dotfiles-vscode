@@ -1,12 +1,13 @@
-description = "Analyzes @spec-driven.md and {{ARGS}} to derive guiding principles aligned with the spirit of spec-kit, and updates /memory/constitution.md and related documents while preserving their existing format and style."
+description = "Updates /memory/constitution.md by analyzing @spec-driven.md and {{ARGS}}."
 
 prompt = """
 
 This is a foundational step to align development with the tool's purpose. Perform the following actions:
 
-1. Update the `/memory/constitution.md` file with a set of guiding principles that align with the core spirit of [https://github.com/github/spec-kit](https://github.com/github/spec-kit).
-2. Deeply analyze the [https://github.com/github/spec-kit/blob/main/spec-driven.md](https://github.com/github/spec-kit/blob/main/spec-driven.md) file and {{ARGS}}.
-3. Check the `/memory/constitution_update_checklist.md` file and update the related documents according to its specifications.
+1. Update the `/memory/constitution.md` file with a set of guiding principles derived from the results of the following analysis.
+2. Deeply analyze the [https://github.com/github/spec-kit/blob/main/spec-driven.md](https://github.com/github/spec-kit/blob/main/spec-driven.md) file.
+3. Deeply analyze the user-provided detailed from arguments: {{ARGS}}
+4. Check the `/memory/constitution_update_checklist.md` file and update the related documents according to its specifications.
 
 Use absolute paths with the repository root for all file operations to avoid path issues.
 """
