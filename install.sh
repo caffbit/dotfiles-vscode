@@ -8,6 +8,8 @@ echo "🚀 (install.sh) 開始執行客製化設定..."
 # --- 建立設定檔的符號連結 (Symlinks) ---
 ln -sfv "$SCRIPT_DIR/.claude" "$HOME/.claude"
 ln -sfv "$SCRIPT_DIR/.gemini" "$HOME/.gemini"
+ln -sfv "$SCRIPT_DIR/.github" "$HOME/.github"
+
 
 # --- 安裝 Python 工具 (uv) ---
 if ! command -v uv &> /dev/null; then
