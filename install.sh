@@ -23,7 +23,8 @@ fi
 echo "🤖 正在安裝 Node.js 版本的 AI 工具..."
 npm install -g \
     @google/gemini-cli \
-    @anthropic-ai/claude-code
+    @anthropic-ai/claude-code \
+    aicommit2
 
 # --- 安裝 Python AI 工具 ---
 echo "🐍 正在安裝 Python 版本的 AI 工具 (aider)..."
