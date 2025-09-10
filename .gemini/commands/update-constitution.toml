@@ -1,0 +1,15 @@
+description = "Corrects project files based on @memory/constitution_update_checklist.md, using the principles in /memory/constitution.md as the highest standard, and outputs a change summary report upon completion."
+
+prompt = """
+
+Directly corrects project files based on a checklist.
+
+This command actively brings project files into compliance with the constitution. Do this:
+
+1. First, load and fully understand the guiding principles in /memory/constitution.md. These principles serve as the highest standard for all corrections.
+2. Next, parse the /memory/constitution_update_checklist.md file. For each item, identify the target file(s) to be modified and the issue to be addressed.
+3. For each checklist item, directly apply the necessary modifications to the target file(s). All corrections must ensure the final state of the file(s) aligns with the relevant principles of the constitution.
+4. After applying all changes, generate a summary report that clearly documents which files were modified and the specific corrections made for each checklist item, for review and verification.
+
+Use absolute paths with the repository root for all file operations to avoid path issues.
+"""

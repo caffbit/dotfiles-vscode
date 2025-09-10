@@ -1,0 +1,14 @@
+description = "Analyzes @spec-driven.md and {{ARGS}} to generate guiding principles consistent with the spirit of spec-kit, and updates /memory/constitution.md while preserving the file's existing format and style."
+
+prompt = """
+
+Update the constitution with principles derived from the specification document.
+
+This is a foundational step to align development with the tool's purpose, do this:
+
+1. Update the /memory/constitution.md file with a set of guiding principles that align with the core spirit of https://github.com/github/spec-kit.
+2. To achieve this, deeply analyze the @spec-driven.md file and {{ARGS}}.
+3. The final output must strictly follow the existing structure and style of /memory/constitution.md.
+
+Use absolute paths with the repository root for all file operations to avoid path issues.
+"""
