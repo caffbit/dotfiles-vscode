@@ -36,4 +36,4 @@ else
     pipx install aider-chat
 fi
 
-echo "✅ (install.sh) 客製化設定完成！"
+echo "✅ (install.sh) 客製化設定完成！
