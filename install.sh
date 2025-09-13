@@ -9,7 +9,7 @@ echo "🚀 (install.sh) 開始執行客製化設定..."
 ln -sfv "$SCRIPT_DIR/.claude" "$HOME/.claude"
 ln -sfv "$SCRIPT_DIR/.gemini" "$HOME/.gemini"
 ln -sfv "$SCRIPT_DIR/.github" "$HOME/.github"
-ln -sfv "$SCRIPT_DIR/.aider.config.yml" "$HOME/.aider.config.yml"
+ln -sfv "$SCRIPT_DIR/.aider.conf.yml" "$HOME/.aider.conf.yml"
 
 
 # --- 安裝 Python 工具 (uv) ---
