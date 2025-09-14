@@ -11,27 +11,27 @@ This setup includes configurations for the following tools:
 *   **Aider**: An AI pair programmer in your terminal.
     *   `~/.aider.conf.yml`: Custom settings including `github-dark` theme, `vim` keybindings, and Chinese language for chat and commits.
 *   **aicommit2**: A tool to automatically generate Git commit messages.
-    *   `~/aicommit2/config.ini`: Sets the locale to `zh-Hant` and is configured to likely use a local model, as cloud-based services are disabled.
+    *   `~/aicommit2/config.ini`: Sets the locale to `zh-Hant` and disables unused API providers to prevent accidental data transmission.
 *   **Claude**: Custom instructions for Anthropic's Claude models.
     *   `~/.claude/CLAUDE.md`: A system prompt that instructs Claude to act as an expert code analyst and respond in Traditional Chinese.
 *   **Gemini**: Custom instructions for Google's Gemini models.
     *   `~/.gemini/GEMINI.md`: A system prompt that instructs Gemini to act as an expert code analyst and respond in Traditional Chinese.
 
-## Usage with VS Code Dev Containers
+## Usage with VS Code & Dev Containers
 
-These configurations are intended to be loaded automatically when you build or open a Dev Container in VS Code.
+These configurations are designed to be automatically installed into your VS Code environment (including Dev Containers) using the **Dotfiles** feature. You can read more about it in the [official VS Code documentation](https://code.visualstudio.com/docs/devcontainers/containers#_personalizing-with-dotfile-repositories).
 
-The `install.sh` script is designed to be run by the Dev Container lifecycle. You can configure this in your `.devcontainer/devcontainer.json` file using the `postCreateCommand` property:
+To set it up, add the following configuration to your VS Code `settings.json` file:
 
 ```json
 {
-  "name": "My Dev Environment",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-  "postCreateCommand": "bash ./.devcontainer/ai-dev-env/install.sh"
+  "dotfiles.repository": "<your-github-id>/<this-repo-name>",
+  "dotfiles.targetPath": "~/dotfiles",
+  "dotfiles.installCommand": "install.sh"
 }
 ```
 
-This command executes the script after the container is created, setting up the symbolic links to the configuration files in the container's environment.
+This will clone the repository into `~/dotfiles` and run the `install.sh` script to create the necessary symbolic links.
 
 ## Customization
 
