@@ -393,10 +393,10 @@ code-theme: github-dark
 vim: true
 
 ## Specify the language to use in the chat (default: None, uses system settings)
-chat-language: zh 
+chat-language: zh-Hant 
 
 ## Specify the language to use in the commit message (default: None, user language)
-commit-language: zh
+commit-language: zh-Hant
 
 ## Always say yes to every confirmation
 #yes-always: false
